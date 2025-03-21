@@ -410,13 +410,13 @@
         <div class="activity-list">
             <h2>Recent Activity</h2>
             {% for activity in recent_activities %}
-            <div class="activity-item">
+                <div class="activity-item">
                 <div>
                     <span class="activity-type {{ activity.type.lower() }}">{{ activity.type }}</span>
                     <span class="activity-info">from {{ activity.country }}</span>
                 </div>
                 <span class="activity-time">{{ activity.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</span>
-            </div>
+                </div>
             {% endfor %}
         </div>
     </div>
